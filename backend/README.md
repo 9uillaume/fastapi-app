@@ -1,6 +1,6 @@
 <h1 align=center><strong>Backend Application 🐍</strong></h1>
 
-This backend application template consists of:
+This backend application consists of:
 
 * Configure the [TOML](https://toml.io/en/) file for testing and linting.
 * Create the backend server with FastAPI and Uvicorn,
@@ -49,7 +49,7 @@ This backend application template consists of:
 
 ---
 
-## SSHhhhttt 🤫 It's a Secret!
+## About Secrets
 
 All secret variables are configured in the `.env`, but in this case since it is listed in our `.gitignore` you should create one and save it in the root directory.
 
@@ -97,7 +97,7 @@ The secret variables are accessed by 2 different files:
 
 ## Pre-Commit
 
-**INFO**: Run **Step 1** every time you `git add` a file to identify any mistakes before `git commit`. Otherwise, you will re-write your perfect commit message again 👿🤬🤮
+**INFO**: Run **Step 1** every time you `git add` a file to identify any mistakes before `git commit`.
 
 * Step 1 $\rightarrow$ Install the pre-commit hook:
     ```shell
