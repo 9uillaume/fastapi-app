@@ -20,7 +20,7 @@ class Book(Base):  # type: ignore
     name: SQLAlchemyMapped[str] = sqlalchemy_mapped_column(
         sqlalchemy.String(length=64), nullable=False, unique=True
     )
-    author_id = sqlalchemy_mapped_column(ForeignKey("author.id"))
+    author_id = sqlalchemy_mapped_column(ForeignKey("author.id"), unique=True)
     created_at: SQLAlchemyMapped[datetime.datetime] = sqlalchemy_mapped_column(
         sqlalchemy.DateTime(timezone=True),
         nullable=False,
