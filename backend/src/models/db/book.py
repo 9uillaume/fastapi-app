@@ -5,7 +5,7 @@ from sqlalchemy.orm import (
     Mapped as SQLAlchemyMapped,
     mapped_column as sqlalchemy_mapped_column,
 )
-from sqlalchemy import ForeignKey
+from sqlalchemy import ForeignKey, UniqueConstraint
 from sqlalchemy.sql import functions as sqlalchemy_functions
 
 from src.repository.table import Base
@@ -20,7 +20,7 @@ class Book(Base):  # type: ignore
     name: SQLAlchemyMapped[str] = sqlalchemy_mapped_column(
         sqlalchemy.String(length=64), nullable=False, unique=True
     )
-    author_id = sqlalchemy_mapped_column(ForeignKey("author.id"))
+    author_id = sqlalchemy_mapped_column(ForeignKey("author.id"), unique=True)
     created_at: SQLAlchemyMapped[datetime.datetime] = sqlalchemy_mapped_column(
         sqlalchemy.DateTime(timezone=True),
         nullable=False,
