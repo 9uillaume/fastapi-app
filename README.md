@@ -1,4 +1,4 @@
-<h1 align=center><strong>FastAPI Backend Application Template</strong></h1>
+<h1 align=center><strong>FastAPI Backend Application</strong></h1>
 
 <div align=center>
  <a href="https://github.com/Aeternalis-Ingenium/FastAPI-Backend-Template/actions/workflows/ci-backend.yaml">
@@ -28,7 +28,7 @@
 
 <br>
 
-This is a template repository aimed to kick-start your project with a setup from a real-world application! This template utilizes the following tech stack:
+This backend app utilizes the following tech stack:
 
 * 🐳 [Dockerized](https://www.docker.com/)
 * 🐘 [Asynchronous PostgreSQL](https://www.postgresql.org/docs/current/libpq-async.html)
@@ -200,8 +200,6 @@ This backend application is setup with `Docker`. Nevertheless, you can see the f
 
 10. Go to your GitHub and register all the secret variables (look in .env.example) in your repository (`settings` $\rightarrow$ (scroll down a bit) `Secrets` $\rightarrow$ `Actions` $\rightarrow$ `New repository secret`)
 
-**IMPORTANT**: Without the secrets registered in Codecov and GitHub, your `CI` will fail and life will be horrible 🤮🤬
-**IMPORTANT**: Remember to always run the container update every once in a while. Without the arguments `-d --build`, your `Docker` dashboard will be full of junk containers!
 
 ## Project Structure
 
@@ -296,13 +294,5 @@ codecov.yaml                            # The configuration file for automated t
 docker-compose.yaml                     # The main configuration file for setting up a multi-container Docker
 ```
 
-## Final Step
-
-You can delete these 3 files (or change its content based on your need):
-- `LICENSE.md`
-- `README.md`
-- `backend/README.md`
-
-Enjoy your development and may your technology be forever useful to everyone 😉🚀🧬
 
 ---
